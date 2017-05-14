@@ -18,17 +18,17 @@
 		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
 		<form action="">
 			<label for="Nombre Dueño"> Nombre:</label>
-			<input type="text">
+			<input id="nombre" type="text" required="">
 			<label for="Nombre mascota"> Apellido:</label>
-			<input type="text">
+			<input id="apellido" type="text" required="">
 			<label for="Email"> Correo Electrónico:</label> 
-			<input type="email">
+			<input id="email" type="email" required="">
 			<label for="Dirección">Dirección: </label>
-			<input type="text">
+			<input id="direccion" type="text" required="">
 			<label for="Teléfono">Teléfono:</label>
-			<input type="text">
+			<input id="telefono" type="tel" required pattern="[0-9]{9}">
 			<label for="">Selecciona un pack:</label>
-			<select name="" id="">
+			<select name="" id="seleccion" required="Selecciona una opción">
 				<option value="">Escoje tu opción</option>
 				<option value="">Pack de té clásico (Té negro)</option>
 				<option value="">Pack frutales (Hierbas y té con aromatizado con fruta</option>
@@ -36,7 +36,7 @@
 			</select>
 			<label for=""></label>
 			<input type="checkbox"> Recibe nuestro newsletter mensual con actividades y sorteos
-			<button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
+			<button type="submit" form="form1" value="" onclick="mostrarData()">Enviar</button>
 		</form>
 	</section>
 	<section id="clientes">
